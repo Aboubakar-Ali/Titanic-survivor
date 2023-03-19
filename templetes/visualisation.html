@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisations Titanic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/visualisation.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <div class="links" id="navbar-links">
+            <a href="../templetes/predict.html">Prédiction</a>
+            <a href="../templetes/about.html">A propos</a>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    
+    <main>
+        <section class="summary">
+            <h2>Résumé de la page Visualisations</h2>
+            <p>Utilisez votre souris pour survoler les graphiques et découvrir plus de détails sur les données des passagers du Titanic.
+            </p>
+        </section>
+        
+        <div class="visualisation-container">
+            <div class="visualisation-item">
+                <h3>Survivants et décédés par sexe et classe</h3>
+                <canvas id="bar-chart-1"></canvas>
+            </div>
+            <div class="visualisation-item">
+                <h3>Pourcentage de décès total par sexe</h3>
+                <canvas id="pie-chart"></canvas>
+            </div>
+            <div class="visualisation-item">
+                <h3>Nombre de décès et de survivants par groupe d'âge</h3>
+                <canvas id="bar-chart-2"></canvas>
+            </div>
+            <div class="visualisation-item">
+                <h3>Pourcentage de décès par groupe d'âge</h3>
+                <canvas id="bar-chart-3"></canvas>
+            </div>
+        </div>
+        <div class="explore-container">
+            <h3 class="explore-text">Découvrez les détails de notre projet et la performance du modèle en visitant notre page À propos.</h3>
+            <a href="../templetes/about.html" class="btn">Infos détaillées</a>
+        </div>   
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../static/js/visualisation.js"></script>
+</body>
+</html>

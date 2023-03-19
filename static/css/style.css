@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: rgba(241, 241, 241, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+/* .nav {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+} */
+
+.hero {
+    height: 100vh;
+    background-image: url('https://th.bing.com/th/id/R.3b84d47f9421a0187114861e1cb0b4f6?rik=ACDo9JDP5L5Xow&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fdDM2PH4.jpg&ehk=4fPVNFuya02q%2f6ifuXss1tb4brE7Ie5T8QF33sgnIME%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 1rem;
+}
+.navbar a:hover {
+    color: #ccc;
+}
+.navbar .logo {
+    margin-left: 1rem;
+}
+.navbar .links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+}
+.navbar .links.open a {
+    margin: 0.5rem 1rem;
+    text-align: left;
+}
+
+.navbar .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .navbar .links {
+        display: none;
+    }
+    .navbar .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    h1 {
+        margin-top: 30px;
+    }
+    p {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar .hamburger {
+        display: none;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    p {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

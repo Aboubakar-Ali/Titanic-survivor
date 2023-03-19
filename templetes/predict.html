@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="../static/css/prediction.css">
+    <title>Titanic Survival Prediction</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <div class="links" id="navbar-links">
+            <a href="../templetes/visualisation.html">Visualisations</a>
+            <a href="../templetes/about.html">A propos</a>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <h1>Prédiction de survie du Titanic</h1>
+    <p>Découvrez si vous auriez survécu au naufrage du Titanic en entrant vos informations ci-dessous.</p>
+    <div class="container">
+        <form id="prediction-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" step="1" min="0" max="100" required>
+            <label for="sex">Sex:</label>
+            <select id="sex" required>
+                <option value="">Choose sex</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+        
+            <label for="pclass">Passenger Class:</label>
+            <select id="pclass" required>
+                <option value="">Choose class</option>
+                <option value="1">1st Class</option>
+                <option value="2">2nd Class</option>
+                <option value="3">3rd Class</option>
+            </select>
+        
+            <label for="embarked">Embarked:</label>
+            <select id="embarked" required>
+                <option value="">Choose point</option>
+                <option value="0">Cherbourg</option>
+                <option value="1">Queenstown</option>
+                <option value="2">Southampton</option>
+            </select>
+            <button type="submit">Predict Survival</button>
+        </form>
+        <div id="result"></div> 
+    </div>
+    <div id="explore-container" class="explore-container">
+        <h3 class="explore-text">Vous voulez avoir une idée sur votre prédiction?</h3>
+        <a href="../templetes/visualisation.html" class="btn">Découvrir Visualisations</a>
+    </div>
+    <script src="../static/js/prediction.js"></script>
+</body>
+</html>

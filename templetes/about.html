@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/about.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <div class="links" id="navbar-links">
+            <a href="../templetes/predict.html">Prédiction</a>
+            <a href="../templetes/visualisation.html">visualisations</a>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <main>
+        <section class="about-section">
+            <h1>À propos de notre projet</h1>
+            <p>Notre projet vise à analyser les données du naufrage du Titanic et à construire un modèle de prédiction pour estimer les chances de survie des passagers. En utilisant les données historiques, nous avons développé des visualisations interactives et des modèles d'apprentissage automatique pour mieux comprendre les facteurs qui ont influencé la survie des passagers.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Les données</h2>
+            <p>Les données utilisées pour ce projet proviennent du site web Kaggle et sont basées sur les informations recueillies sur les passagers du Titanic. Ces données comprennent des informations telles que l'âge, le sexe, la classe de billet, le tarif, le port d'embarquement et d'autres détails sur les passagers. En analysant ces données, nous avons identifié des tendances et des schémas qui ont contribué à la survie des passagers.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Précision et fiabilité des prédictions</h2>
+            <p>Nos modèles de prédiction sont basés sur des algorithmes d'apprentissage automatique qui ont été entraînés et testés avec les données disponibles. Voici les indicateurs de performance actuels de notre modèle :</p>
+            <ul>
+                <li><strong>Précision :</strong> La précision est le rapport entre les prédictions correctes et le nombre total de prédictions. Dans notre cas, le modèle a une précision d'environ 79,9 %. Cela signifie que le modèle a correctement prédit la survie des passagers du Titanic dans 79,9 % des cas.</li>
+                <li><strong>Rappel :</strong> Le rappel est le rapport entre les vrais positifs et la somme des vrais positifs et des faux négatifs. Un rappel d'environ 75,7 % indique que le modèle a identifié correctement 75,7 % des passagers qui ont survécu.</li>
+                <li><strong>Score F1 :</strong> Le score F1 est la moyenne harmonique de la précision et du rappel. Il est généralement utilisé lorsque les deux mesures sont importantes pour l'évaluation du modèle. Dans notre cas, le score F1 est d'environ 75,7 %, ce qui est assez proche de la précision et du rappel.</li>
+                <li><strong>AUC-ROC :</strong> L'AUC-ROC est l'aire sous la courbe ROC (Receiver Operating Characteristic). Elle mesure la capacité du modèle à distinguer entre les classes positives et négatives. Un AUC-ROC d'environ 79,3 % indique que le modèle a une capacité modérée à distinguer entre les passagers qui ont survécu et ceux qui ne l'ont pas fait.</li>
+                </ul>
+                <p>La matrice de confusion montre également les prédictions correctes et incorrectes réparties entre les différentes classes. Dans notre cas, le modèle a prédit correctement 87 vrais négatifs (non-survivants) et 56 vrais positifs (survivants), tandis qu'il a prédit incorrectement 18 faux négatifs et 18 faux positifs.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Amélioration du modèle</h2>
+            <p>Selon les résultats, notre modèle semble avoir une performance modérée. Si vous souhaitez l'améliorer, vous pouvez essayer différentes techniques d'optimisation, telles que l'ajustement des hyperparamètres, l'essai d'autres algorithmes de classification, ou la sélection de caractéristiques pour ne conserver que les caractéristiques les plus pertinentes. Nous continuerons également à travailler sur l'amélioration du modèle pour fournir des prédictions plus précises et fiables au fil du temps.</p>
+        </section>
+        <section class="about-section github-section">
+            <h2>Informations techniques supplémentaires</h2>
+            <p>Pour ceux qui souhaitent en savoir plus sur les aspects techniques de notre projet, n'hésitez pas à consulter notre dépôt GitHub.</p>
+            <a href="https://github.com/your_username/your_repository" target="_blank" class="github-btn">Visitez notre GitHub</a>
+        </section>
+        
+    </main>
+    <script src="../static/js/about.js"></script>
+</body>
+</html>
