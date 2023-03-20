@@ -11,10 +11,10 @@
 
 <body>
     <div class="navbar">
-        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <a href="{{ url_for('index') }}" class="logo">Mon Logo</a>
         <div class="links" id="navbar-links">
-            <a href="../templetes/predict.html">Prédiction</a>
-            <a href="../templetes/visualisation.html">visualisations</a>
+            <a href="{{ url_for('predict_page') }}">Prédiction</a>
+            <a href="{{ url_for('visualisations') }}">Visualisations</a>
         </div>
         <div class="hamburger" id="hamburger-menu">
             <i class="fas fa-bars"></i>
@@ -51,7 +51,7 @@
         <section class="about-section github-section">
             <h2>Informations techniques supplémentaires</h2>
             <p>Pour ceux qui souhaitent en savoir plus sur les aspects techniques de notre projet, n'hésitez pas à consulter notre dépôt GitHub.</p>
-            <a href="https://github.com/your_username/your_repository" target="_blank" class="github-btn">Visitez notre GitHub</a>
+            <a href="https://github.com/Aboubakar-Ali/Titanic-survivor" target="_blank" class="github-btn">Visitez notre GitHub</a>
         </section>
         
     </main>

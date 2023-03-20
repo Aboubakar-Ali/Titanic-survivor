@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <a href="{{ url_for('index') }}" class="logo">Mon Logo</a>
         <div class="links" id="navbar-links">
-            <a href="../templetes/predict.html">Prédiction</a>
-            <a href="../templetes/about.html">A propos</a>
+            <a href="{{ url_for('predict_page') }}">Prédiction</a>
+            <a href="{{ url_for('about') }}">À propos</a>
         </div>
         <div class="hamburger" id="hamburger-menu">
             <i class="fas fa-bars"></i>
@@ -46,7 +46,7 @@
         </div>
         <div class="explore-container">
             <h3 class="explore-text">Découvrez les détails de notre projet et la performance du modèle en visitant notre page À propos.</h3>
-            <a href="../templetes/about.html" class="btn">Infos détaillées</a>
+            <a href="{{ url_for('about') }}" class="btn">Infos détaillées</a>
         </div>   
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

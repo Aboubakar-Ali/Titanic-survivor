@@ -10,11 +10,13 @@
 </head>
 <body>
     <div class="navbar">
-        <a href="../templetes/index.html" class="logo">Mon Logo</a>
+        <a href="{{ url_for('index') }}" class="logo">Mon Logo</a>
         <div class="links" id="navbar-links">
-            <a href="../templetes/predict.html">Prédiction</a>
-            <a href="../templetes/visualisation.html">Visualisations</a>
-            <a href="../templetes/about.html">A propos</a>
+            <a href="{{ url_for('predict_page') }}">Prédiction</a>
+            <a href="{{ url_for('visualisations') }}">Visualisations</a>
+            <a href="{{ url_for('about') }}">À propos</a>
+
+
         </div>
         <div class="hamburger" id="hamburger-menu">
             <i class="fas fa-bars"></i>
@@ -31,7 +33,7 @@
                 <p>La catastrophe a mis en lumière l'importance de la sécurité en mer et a conduit à la mise en place de nouvelles réglementations pour les navires.</p>
 
                 <p>Rejoignez-nous pour revivre l'expérience du Titanic et découvrez si vous auriez survécu à ce naufrage tragique en utilisant notre modèle de prédiction basé sur l'apprentissage automatique.</p>
-                <a href="../templetes/predict.html" class="btn btn-primary">Revivre l'expérience</a>
+                <a href="{{ url_for('predict_page') }}" class="btn btn-primary">Revivre l'expérience</a>
             </div>
         </section>
     </main>
