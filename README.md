@@ -30,6 +30,7 @@ Les données utilisées pour ce projet proviennent du site web [Kaggle] et sont 
 
 # Structure du projet
 
+```
 ├── Data
 │   ├── analyse.ipynb #données servant pour la visualisation
 │   ├── train.csv  #csv de base
@@ -61,7 +62,7 @@ Les données utilisées pour ce projet proviennent du site web [Kaggle] et sont 
 │   └── visualisation.html
 ├── README.md                                       # Fichier README
 └── requirements.txt                                # Fichier des dépendances Python
-
+```
 
 ## Comment contribuer
 
